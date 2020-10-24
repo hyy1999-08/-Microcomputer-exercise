@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+
+
+<AnchorPane fx:controller="application.Controller2" prefHeight="566.0" prefWidth="623.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <WebView layoutX="263.0" layoutY="342.0" prefHeight="200.0" prefWidth="200.0" />
+      <ComboBox layoutX="25.0" layoutY="14.0" prefWidth="150.0" promptText="数据" />
+      <Pagination layoutX="21.0" layoutY="47.0" maxPageIndicatorCount="3" prefHeight="503.0" prefWidth="589.0" />
+      <Separator layoutX="26.0" layoutY="43.0" prefHeight="3.0" prefWidth="596.0" style="-fx-background-color: black;" />
+      <TableView editable="true" fixedCellSize="1.0" layoutX="26.0" layoutY="47.0" prefHeight="451.0" prefWidth="589.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="d1" />
+          <TableColumn prefWidth="75.0" text="d2" />
+            <TableColumn prefWidth="107.0" text="d3" />
+            <TableColumn prefWidth="93.0" text="d4" />
+            <TableColumn prefWidth="113.0" text="d5" />
+            <TableColumn prefWidth="125.0" text="d6" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+   <Button text="Button"  layoutX="100" layoutY="200"></Button>
+</AnchorPane>

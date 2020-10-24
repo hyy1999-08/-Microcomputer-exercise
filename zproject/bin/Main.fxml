@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="application.Controller" xmlns:fx="http://javafx.com/fxml/1" prefHeight="600.0" prefWidth="800.0">
+	<!-- TODO Add Nodes -->
+	<children>
+	<Button fx:id="button1" text="气象数据"   layoutX="50" layoutY="50" prefHeight="200.0" prefWidth="300.0" onAction="#button1">
+	<font>
+            <Font name="Arial" size="50.0" />
+         </font>
+	</Button>
+	
+	<Button fx:id="button2" text="沙尘通量"  layoutX="400" layoutY="50" prefHeight="200.0" prefWidth="300.0" onAction="#button2">
+	<font>
+            <Font name="Arial" size="50.0" />
+         </font>
+         </Button>
+         
+	<Button fx:id="button3" text="单梯度风速通量"  layoutX="50" layoutY="300" prefHeight="200.0" prefWidth="300.0" onAction="#button3">
+	<font>
+            <Font name="Arial" size="50.0" />
+         </font>
+         </Button>
+         
+	<Button fx:id="button4" text="多梯度风速通量"  layoutX="400" layoutY="300" prefHeight="200.0" prefWidth="300.0" onAction="#button4">
+	<font>
+            <Font name="Arial" size="50.0" />
+         </font>
+         </Button>
+         </children>
+</AnchorPane>
+

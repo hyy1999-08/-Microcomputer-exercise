@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:controller="application.RegisterController" 
+xmlns:fx="http://javafx.com/fxml/1" prefHeight="800.0" prefWidth="600.0" >
+	<!-- TODO Add Nodes -->
+	<Label  text="用 户 注 册" layoutX="250.0" layoutY="60.0">
+	<font>
+    <Font name="System Bold Italic" size="50.0" />
+    </font>
+	</Label>
+	
+	<Label  text="用户名" layoutX="180.0" layoutY="200.0">
+	<font>
+    <Font name="System Bold Italic" size="25.0" />
+    </font>
+	</Label>
+	<TextField fx:id="Rnametext" layoutX="285.0" layoutY="202.0" prefHeight="30.0" prefWidth="200.0">
+	</TextField>
+	<Label fx:id="Rnamelabel" layoutX="285.0" layoutY="232.0"></Label>
+	
+	<Label  text="密 码" layoutX="185.0" layoutY="260.0">
+	<font>
+    <Font name="System Bold Italic" size="25.0" />
+    </font>
+	</Label>
+	<PasswordField   fx:id="Rpasstext" layoutX="285.0" layoutY="262.0" prefHeight="30.0" prefWidth="200.0">
+	</PasswordField>
+	<Label fx:id="Rpaslabel" layoutX="285.0" layoutY="292.0"></Label>
+	
+	<Label  text="确认密码" layoutX="170.0" layoutY="320.0">
+	<font>
+    <Font name="System Bold Italic" size="25.0" />
+    </font>
+	</Label>
+	<PasswordField   fx:id="Rrpasstext" layoutX="285.0" layoutY="322.0" prefHeight="30.0" prefWidth="200.0">
+	</PasswordField>
+	<Label fx:id="Rpasslabel" layoutX="285.0" layoutY="352.0"></Label>
+	
+	<Label  text="邮箱" layoutX="185.0" layoutY="380.0">
+	<font>
+    <Font name="System Bold Italic" size="25.0" />
+    </font>
+	</Label>
+	<TextField   fx:id="Remail" layoutX="285.0" layoutY="382.0" prefHeight="30.0" prefWidth="200.0">
+	</TextField>
+	<Label fx:id="Remaillabel" layoutX="285.0" layoutY="412.0"></Label>
+	
+ 
+    <RadioButton fx:id="Rprotea" layoutX="290.0" layoutY="432.0" text="老师" ToggleGroup="$userpro" selected="true" onAction="#showt">
+	<font>
+    <Font name="System Bold Italic" size="15.0" />
+    </font>  
+    <ToggleGroup fx:id="userpro"></ToggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="Rprostu" layoutX="360.0" layoutY="432.0" text="学生"  ToggleGroup="$userpro" onAction="#hidet">
+	<font>
+    <Font name="System Bold Italic" size="15.0" />
+    </font>
+    </RadioButton>
+    
+    
+   <VBox fx:id="Rvbox" layoutX="150.0" layoutY="450.0" prefHeight="100.0" prefWidth="120.0" >
+    <RadioButton fx:id="Rtitle0" layoutX="150.0" layoutY="450.0" text="子课题总" ToggleGroup="$Rtitle" selected="true">
+	<font>
+    <Font name="System Bold Italic" size="15.0" />
+    </font>  
+    <ToggleGroup fx:id="Rtitle"></ToggleGroup>
+    </RadioButton>
+    
+     <RadioButton fx:id="Rtitle1" layoutX="150.0" layoutY="475.0" text="子课题一"  ToggleGroup="$Rtitle">
+	<font>
+    <Font name="System Bold Italic" size="15.0" />
+    </font>
+    </RadioButton>
+    
+      <RadioButton fx:id="Rtitle2" layoutX="150.0" layoutY="500.0" text="子课题二"  ToggleGroup="$Rtitle">
+	<font>
+    <Font name="System Bold Italic" size="15.0" />
+    </font>
+    </RadioButton>
+    
+    
+    
+     <RadioButton fx:id="Rtitle3" layoutX="150.0" layoutY="525.0" text="子课题三"  ToggleGroup="$Rtitle">
+	<font>
+    <Font name="System Bold Italic" size="15.0" />
+    </font>
+    </RadioButton>
+    </VBox>
+    
+    
+    <Button fx:id="Rbutton" onAction="#gotodatabase" text="注     册" layoutX="280.0" layoutY="472" prefHeight="20.0" prefWidth="200.0">
+	<font>
+    <Font name="System Bold Italic" size="18.0" />
+    </font>
+    </Button>
+	<Hyperlink fx:id="Rgotologin" onAction="#gotologin" layoutX="280.0" layoutY="512" text="返回主界面" >
+	<font>
+    <Font name="System Bold Italic" size="15.0" />
+    </font> </Hyperlink>
+	<Hyperlink fx:id="Rgotoforget" onAction="#gotoforget"  layoutX="400.0" layoutY="512.0" text="忘记密码"  > 
+	<font>
+    <Font name="System Bold Italic" size="15.0" />
+    </font></Hyperlink>
+   
+    
+   
+    
+</AnchorPane>
+
